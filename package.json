@@ -1,0 +1,37 @@
+{
+  "name": "start",
+  "version": "3.0.5",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "Zirka Andry",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "changed": "0.0.2",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-changed": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^4.0.1",
+    "gulp-util": "^3.0.8",
+    "gulp.spritesmith": "^6.11.0",
+    "imagemin-pngquant": "^5.0.1",
+    "imagemin-webp": "^6.0.0",
+    "readable-stream": "^3.6.0"
+  },
+  "dependencies": {
+    "pngquant-bin": "^3.1.1",
+    "sass": "^1.54.3"
+  }
+}
