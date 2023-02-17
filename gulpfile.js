@@ -1,5 +1,5 @@
 const gulp = require("gulp");                             // gulp core
-const sass = require('gulp-sass');                        // sass compiler
+const sass = require('gulp-sass')(require('sass'));                       // sass compiler
 const browserSync = require('browser-sync').create();     // inject code to all devices
 
 
@@ -41,20 +41,6 @@ function styles() {
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.stream());
 }
-
-// function stylesReviews() {
-//     return gulp.src('./app/sass/only/**/*')
-//         .pipe(sass().on('error', sass.logError))
-//         .pipe(autoprefixer({
-//             cascade: false
-//         }))
-//         .pipe(csso())
-//         .pipe(gulp.dest('app/css/onlyFaq'))
-//         .pipe(browserSync.stream());
-// }
-
-
-
 
 function scripts() {
     return gulp.src('./app/js/*.js')                 // get the files
@@ -110,12 +96,12 @@ function images() {
             imagemin.gifsicle({interlaced: true}),
             imagemin.mozjpeg({quality: 75, progressive: true}),
             imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: false},
-                    {cleanupIDs: false}
-                ]
-            })
+            // imagemin.svgo({
+            //     plugins: [
+            //         {removeViewBox: false},
+            //         {cleanupIDs: false}
+            //     ]
+            // })
         ]))
 
         .pipe(gulp.dest('dist/images'));                   // where to put the files
@@ -143,7 +129,7 @@ function watch(){
         // tunnel: true,
     });
     gulp.watch('./app/sass/**/*.scss', styles);
-    gulp.watch('./app/page.html').on('change', browserSync.reload);
+    gulp.watch('./app/index.html').on('change', browserSync.reload);
     gulp.watch('./app/js/**/*.js').on('change', browserSync.reload);
     gulp.watch('./app/images/sprite/*.*').on('change', browserSync.reload);
 

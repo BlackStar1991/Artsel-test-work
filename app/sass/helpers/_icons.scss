@@ -1,0 +1,202 @@
+/////////// GAMES ICON
+
+*[data-icon^=min-]:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #181a25 50% 50% no-repeat;
+
+
+  //@include sprite($icon-gaminator);
+}
+
+//h1[data-icon^=min-]:before {
+//  top: 6px;
+//}
+
+*[data-icon="min-netent"]:before {
+  background-image: url("../images/svg-icons/providers/icon-netent.svg");
+}
+
+*[data-icon="min-playtech"]:before {
+  background-image: url("../images/svg-icons/providers/icon-playtech.svg");
+}
+
+
+*[data-icon="min-gaminator"]:before {
+  background-image: url("../images/svg-icons/providers/icon-gaminator.svg");
+}
+
+*[data-icon="min-igrosoft"]:before {
+  background-image: url("../images/svg-icons/providers/icon-igrosoft.svg");
+}
+
+*[data-icon="min-endorphina"]:before {
+  background-image: url("../images/svg-icons/providers/icon-endorphina.svg");
+}
+
+*[data-icon="min-megajack"]:before,
+*[data-icon="min-mega-jack"]:before {
+  background-image: url("../images/svg-icons/providers/icon-megajack.svg");
+}
+
+*[data-icon="min-microgaming"]:before {
+  background-image: url("../images/svg-icons/providers/icon-microgaming.svg");
+}
+
+*[data-icon="min-playson"]:before {
+  background-image: url("../images/svg-icons/providers/icon-playson.svg");
+}
+
+
+*[data-icon="min-thunderkick"]:before {
+  background-image: url("../images/svg-icons/providers/icon-thunderkick.svg");
+}
+
+*[data-icon="min-yggdrasil"]:before {
+  background-image: url("../images/svg-icons/providers/icon-yggdrasil.svg");
+}
+
+*[data-icon="min-push-gaming"]:before,
+*[data-icon="min-pushgaming"]:before {
+  background-image: url("../images/svg-icons/providers/icon-pushgaming.svg");
+}
+
+
+*[data-icon="min-rabcat"]:before,
+*[data-icon="min-robcat"]:before {
+  background-image: url("../images/svg-icons/providers/icon-robcat.svg");
+}
+
+*[data-icon="min-evoplay"]:before {
+  background-image: url("../images/svg-icons/providers/icon-evoplay.svg");
+}
+
+
+*[data-icon="min-netgame-entertainment"]:before {
+  background-image: url("../images/svg-icons/providers/icon-netgame-entertainment.svg");
+}
+
+
+*[data-icon="min-quickspin"]:before {
+  background-image: url("../images/svg-icons/providers/icon-quickspin.svg");
+}
+
+
+*[data-icon="min-isoftbet"]:before {
+  background-image: url("../images/svg-icons/providers/icon-isoftbet.svg");
+}
+
+*[data-icon="min-superomatic"]:before {
+  background-image: url("../images/svg-icons/providers/icon-superomatic.svg");
+}
+
+*[data-icon="min-admiral"]:before {
+  background-image: url("../images/svg-icons/providers/icon-admiral.svg");
+}
+
+//////////////////////
+//
+//*[data-icon="min-netent"]:before {
+//  background-position-x: $icon-netent-offset-x;
+//  background-position-y: $icon-netent-offset-y;
+//}
+//
+//*[data-icon="min-playtech"]:before {
+//  background-position-x: $icon-playtech-offset-x;
+//  background-position-y: $icon-playtech-offset-y;
+//}
+//
+//
+//*[data-icon="min-gaminator"]:before {
+//  background-position-x: $icon-gaminator-offset-x;
+//  background-position-y: $icon-gaminator-offset-y;
+//}
+//
+//*[data-icon="min-igrosoft"]:before {
+//  background-position-x: $icon-igrosoft-offset-x;
+//  background-position-y: $icon-igrosoft-offset-y;
+//}
+//
+//*[data-icon="min-endorphina"]:before {
+//  background-position-x: $icon-endorphina-offset-x;
+//  background-position-y: $icon-endorphina-offset-y;
+//}
+//
+//*[data-icon="min-megajack"]:before,
+//*[data-icon="min-mega-jack"]:before {
+//  background-position-x: $icon-megajack-offset-x;
+//  background-position-y: $icon-megajack-offset-y;
+//}
+//
+//*[data-icon="min-microgaming"]:before {
+//  background-position-x: $icon-microgaming-offset-x;
+//  background-position-y: $icon-microgaming-offset-y;
+//}
+//
+//*[data-icon="min-playson"]:before {
+//  background-position-x: $icon-playson-offset-x;
+//  background-position-y: $icon-playson-offset-y;
+//}
+//
+//
+//*[data-icon="min-thunderkick"]:before {
+//  background-position-x: $icon-thunderkick-offset-x;
+//  background-position-y: $icon-thunderkick-offset-y;
+//}
+//
+//*[data-icon="min-yggdrasil"]:before {
+//  background-position-x: $icon-yggdrasil-offset-x;
+//  background-position-y: $icon-yggdrasil-offset-y;
+//}
+//
+//*[data-icon="min-push-gaming"]:before,
+//*[data-icon="min-pushgaming"]:before {
+//  background-position-x: $icon-pushgaming-offset-x;
+//  background-position-y: $icon-pushgaming-offset-y;
+//}
+//
+//
+//*[data-icon="min-rabcat"]:before,
+//*[data-icon="min-robcat"]:before {
+//  background-position-x: $icon-robcat-offset-x;
+//  background-position-y: $icon-robcat-offset-y;
+//}
+//
+//*[data-icon="min-evoplay"]:before {
+//  background-position-x: $icon-evoplay-offset-x;
+//  background-position-y: $icon-evoplay-offset-y;
+//}
+//
+//
+//*[data-icon="min-netgame-entertainment"]:before {
+//  background-position-x: $icon-netgame-entertainment-offset-x;
+//  background-position-y: $icon-netgame-entertainment-offset-y;
+//}
+//
+//
+//*[data-icon="min-quickspin"]:before {
+//  background-position-x: $icon-quickspin-offset-x;
+//  background-position-y: $icon-quickspin-offset-y;
+//}
+//
+//
+//*[data-icon="min-isoftbet"]:before {
+//  background-position-x: $icon-isoftbet-offset-x;
+//  background-position-y: $icon-isoftbet-offset-y;
+//}
+//
+//*[data-icon="min-superomatic"]:before {
+//  background-position-x: $icon-superomatic-offset-x;
+//  background-position-y: $icon-superomatic-offset-y;
+//}
+//
+//*[data-icon="min-admiral"]:before {
+//  background-position-x: $icon-admiral-offset-x;
+//  background-position-y: $icon-admiral-offset-y;
+//}

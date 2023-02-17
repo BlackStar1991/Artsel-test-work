@@ -1,0 +1,175 @@
+.section_about-us{
+  background: #FF97B3;
+}
+
+.aboutUs_box{
+
+
+  @media (min-width: 1700px) {
+    display: grid;
+    grid-template-columns: 650px 1fr;
+    grid-gap:118px 0;
+  }
+
+}
+
+.aboutUs_item{
+  position: relative;
+  text-align: center;
+}
+
+
+
+.aboutUs_fan{
+  align-self: end;
+}
+
+
+
+.aboutUs_fan-big{
+  max-width: 90vw;
+  object-fit: contain;
+}
+
+.aboutUs_fan-min__wrapp{
+  position: absolute;
+
+
+  //top: -60px;
+  //left: calc(50% - 15px);
+
+  transform: translateX(-50%);
+  top: -8%;
+  left: 54%;
+
+
+  @media (min-width: 768px) {
+    top: -80px;
+    left: 50%;
+    transform: translateX(-228px);
+  }
+
+
+}
+
+.aboutUs_fan-min{
+  transform-origin: 50% 50%;
+  //animation: rotateFan 1s linear infinite;
+  object-fit: contain;
+  max-width: 90vw;
+  max-height: 90vw;
+
+  @media (min-width: 768px) {
+    transform-origin: calc(50% - 62px) 50%;
+  }
+
+
+}
+
+@keyframes rotateFan {
+  0%{
+    transform:  rotate(0);
+  }
+  100%{
+    transform:  rotate(360deg);
+  }
+}
+
+
+
+.aboutUs_item__fullcard{
+  justify-self: end;
+}
+
+.aboutUs_card{
+  padding: 20px;
+  width: 100%;
+
+  background-color: #780D1A;
+
+
+
+
+  background-size: 100%;
+  color: #fff;
+  text-align: left;
+
+
+  @media (min-width: 600px) {
+    padding: 54px;
+    -webkit-mask-image: url("./../images/about-us/bg_block.svg");
+    mask-image: url("./../images/about-us/bg_block.svg");
+    mask-size:100%;
+    mask-repeat: no-repeat;
+  }
+
+
+  @media (min-width: 1700px) {
+    max-width: 656px;
+    height: 767px;
+    padding: 68px 48px;
+    mask-size:cover;
+  }
+}
+
+.aboutUs_title{
+  position: relative;
+  font-size: 45px;
+  line-height: 50px;
+  font-style: normal;
+  font-weight: 400;
+
+  @media (min-width: 450px) {
+    font-size: 82px;
+    line-height: 94px;
+  }
+
+
+}
+.decor_line{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+
+  @media (min-width: 1700px) {
+    padding-bottom: 30px;
+  }
+
+}
+
+.aboutUs_desc{
+  margin-top: 32px;
+}
+
+.aboutUs_desc p{
+  margin-bottom: 16px;
+  font-style: normal;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 31.5px;
+
+  @media (min-width: 450px) {
+    font-size: 21px;
+  }
+}
+
+
+.btn_aboutAs{
+  margin-top: 32px;
+  width: 100%;
+  max-width: 284px;
+  background: #FF97B3;
+  border-radius: 30px;
+
+
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 0.045em;
+  color: #000;
+
+
+
+  &:hover,
+  &:focus{
+    background: #ab032f;
+  }
+}

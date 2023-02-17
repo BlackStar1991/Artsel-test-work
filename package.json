@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "pngquant-bin": "^3.1.1",
-    "sass": "^1.54.3"
+    "sass": "^1.54.3",
+    "swiper": "^9.0.5"
   }
 }
