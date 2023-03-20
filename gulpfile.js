@@ -26,6 +26,8 @@ const imagemin = require('gulp-imagemin'),
 const changed = require('gulp-changed'),
     options = {removeComments: false};
 
+const ttf2woff2 = require('gulp-ttf2woff2');
+const  fonter = require('gulp-fonter-2');
 
 /*********************************************/
 /*WATCHER (WATCHING FILE CHANGES)*/
@@ -46,6 +48,18 @@ function scripts() {
     return gulp.src('./app/js/*.js')                 // get the files
         .pipe(browserSync.stream())
     // browsersync stream
+}
+
+function convertFonts(){
+    return gulp.src('./app/fonts/**/*.ttf')
+        .pipe(fonter(
+            {
+                subset: [66,67,68,69,70,71],
+                formats: ['woff', 'ttf']
+            }
+        ))
+        .pipe(ttf2woff2())
+        .pipe(gulp.dest('app/fonts'));
 }
 
 
@@ -174,7 +188,7 @@ gulp.task('fonts', fonts);
 // gulp.task('stylesReviews', stylesReviews);
 
 
-
+gulp.task('convertFonts', convertFonts);
 gulp.task('sprite', sprite);
 gulp.task('images', images);
 
